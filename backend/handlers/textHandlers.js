@@ -50,7 +50,7 @@ const enrichText = async (req, res) => {
       enrichedText,
     });
   } catch(Error) {
-    res.status({
+    res.status(500,{
       code: 500,
       ok: false,
       text: null,
